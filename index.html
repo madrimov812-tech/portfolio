@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Portfolio</title>
+    <style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}</style>
+</head>
+<body>
+    <header>
+        <h1>Ism Familiya</h1>
+        <nav>
+            <ul>
+                <li><a href="#haqida">Haqida</a></li>
+                <li><a href="#loyihalar">Loyihalar</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="haqida">
+        <h2>Haqida</h2>
+        <p>Men dasturchiman va web texnologiyalariga qiziqaman.</p>
+    </section>
+
+    <section id="loyihalar">
+        <h2>Loyihalar</h2>
+        <p>Bu yerda mening loyihalarim haqida ma'lumotlar bo'ladi.</p>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <button onclick="showAlert()">Mening bilan bog'laning</button>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ism Familiya. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script>
+        function showAlert() {
+            alert("Siz menga bog'landingiz!");
+        }
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
